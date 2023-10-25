@@ -46,13 +46,10 @@ def mandelbrot_set(iteration: int, resolution: tuple, zoom_factor: float) -> np.
         z = z * mask
         mask = np.repeat(mask[:, :, np.newaxis], 3, axis=2)
         mask = lastmask * mask
-
         framei = (lastmask - mask) * np.array([255, 30+225*(i/iteration), 30+225*(i/iteration)])
         background += framei
         lastmask = mask
-
         frame = background.astype(np.uint8)
-
         z = z * z + c
 
         # free mem
