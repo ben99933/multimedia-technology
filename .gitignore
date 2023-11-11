@@ -1,6 +1,12 @@
 .idea
-m100.png
+hw1/m100.png
 *.mp4
 *.mp3
-test.py
-samplecode.py
+hw1/test.py
+hw1/samplecode.py
+dist
+build
+*.pyc
+*.spec
+hw2/*.jpg
+!hw2/柴犬飛飛.jpg
