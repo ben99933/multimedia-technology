@@ -84,15 +84,14 @@ def main():
 
     # sharp
     cv2.imwrite("unsharp.jpg", unsharp(image))
-    # cv2.imwrite("unsharp_gaussian3.jpg", unsharp(cv2.imread("3x3.jpg")))
-    # cv2.imwrite("unsharp_gaussian7.jpg", unsharp(cv2.imread("7x7.jpg")))
-    # cv2.imwrite("unsharp_gaussian11.jpg", unsharp(cv2.imread("11x11.jpg")))
+    cv2.imwrite("unsharp_gaussian3.jpg", unsharp(cv2.imread("3x3.jpg")))
+    cv2.imwrite("unsharp_gaussian7.jpg", unsharp(cv2.imread("7x7.jpg")))
+    cv2.imwrite("unsharp_gaussian11.jpg", unsharp(cv2.imread("11x11.jpg")))
 
     cv2.imwrite("edgeDetection.jpg", edgeDetection(image))
-    # cv2.imwrite("edgeDetection_gaussian3.jpg", edgeDetection(cv2.imread("3x3.jpg")))
-    # cv2.imwrite("edgeDetection_gaussian7.jpg", edgeDetection(cv2.imread("7x7.jpg")))
-    # cv2.imwrite("edgeDetection_gaussian11.jpg", edgeDetection(cv2.imread("11x11.jpg")))
-
+    cv2.imwrite("edgeDetection_gaussian3.jpg", edgeDetection(cv2.imread("3x3.jpg")))
+    cv2.imwrite("edgeDetection_gaussian7.jpg", edgeDetection(cv2.imread("7x7.jpg")))
+    cv2.imwrite("edgeDetection_gaussian11.jpg", edgeDetection(cv2.imread("11x11.jpg")))
 
     # PSNR
     print(f'3x3.png PSNR: {cv2.PSNR(image, cv2.imread("3x3.jpg"))}')
